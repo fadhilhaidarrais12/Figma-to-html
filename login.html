@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+
+    <img src="img/service-2.png" alt="">
+    
+    <style>
+        h1, form{
+            text-align: center;
+            
+        }
+
+        paragraft, form{
+            color: orange;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+    <paragraft>Ini form Login</paragraft>
+    <form action="">
+        <input type="text" placeholder="Username" id="username"/>
+        <input type="password" placeholder="Password" id="password"/>
+        <input type="button" value="Login" id="tombol"/>
+    </form>
+
+    <script>
+        const bnTombol = document.querySelector("#tombol");
+        const txUsername = document.querySelector("#username");
+        const txPassword = document.querySelector("#password");
+
+        bnTombol.addEventListener("click", function(){
+            // console.log(txUsername.value);
+            // if(txUsername.value == "goeroeku"){
+            //    console.log("Username anda benar");
+            // }
+            // if(txPassword.value == "ggwp"){
+            //   console.log("Password anda benar")
+            // }
+            if(txUsername.value == "fadhil" && txPassword.value == "fadhil123"){
+                window.location ="index.html";
+            }
+            else{
+                // console.log("Username dan Password anda salah")
+                alert("Username dan Password anda salah, silahkan coba lagi");
+            }
+        });
+    </script>
+</body>
+</html>
